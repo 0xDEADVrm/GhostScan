@@ -1,0 +1,13 @@
+#!/usr/bin/env python3
+automated_bug_hunter_full.py
+Comprehensive, robust recon script (Subdomains -> Ports -> Tech -> Screenshots -> Reports)
+
+Usage:
+    python3 automated_bug_hunter_full.py example.com
+    python3 automated_bug_hunter_full.py --target example.com --no-screenshot --no-nmap
+
+Requirements:
+    pip3 install requests beautifulsoup4 python-docx
+    # optional:
+    pip3 install python-nmap selenium sublist3r
+    # For selenium screenshots: install Chrome/Chromium and chromedriver matching your browser.
