@@ -34,8 +34,8 @@ Nmap + python-nmap Integration
 
 🛠️ Installation
 1. Clone the Repository
-git clone https://github.com/YOUR-USERNAME/Automated-Bug-Hunter.git
-cd Automated-Bug-Hunter
+git clone https://github.com/0xDEADVrm/Automated-Bug-Hunter.git
+cd GhostScan
 
 2. Install Python Dependencies
 pip install -r requirements.txt
@@ -48,7 +48,7 @@ sudo apt install nmap wkhtmltopdf
 
 Run the tool like this:
 
-python3 bughunter.py -d example.com
+python3 ghostscan.py -d example.com
 
 Options
 Flag	Description
@@ -61,12 +61,12 @@ Flag	Description
 
 Example:
 
-python3 bughunter.py -d google.com --threads 50 -o report.txt
+python3 ghostscan.py -d google.com --threads 50 -o report.txt
 
 📦 Project Structure
 Automated-Bug-Hunter/
 │
-├── bughunter.py
+├── ghostscan.py
 ├── requirements.txt
 └── README.md
 
