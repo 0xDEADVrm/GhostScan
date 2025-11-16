@@ -34,7 +34,7 @@ Nmap + python-nmap Integration
 
 🛠️ Installation
 1. Clone the Repository
-git clone https://github.com/0xDEADVrm/Automated-Bug-Hunter.git
+git clone https://github.com/0xDEADVrm/GhostScan.git
 cd GhostScan
 
 2. Install Python Dependencies
