@@ -1,13 +1,105 @@
-#!/usr/bin/env python3
-automated_bug_hunter_full.py
-Comprehensive, robust recon script (Subdomains -> Ports -> Tech -> Screenshots -> Reports)
+🕷️ Automated Bug Hunter (GhostScan)
+Advanced Recon & Subdomain Enumeration Tool for Bug Bounty Hunters
 
-Usage:
-    python3 automated_bug_hunter_full.py example.com
-    python3 automated_bug_hunter_full.py --target example.com --no-screenshot --no-nmap
+GhostScan is a powerful Python-based automated reconnaissance tool designed for bug bounty hunters, penetration testers, and cybersecurity students.
+It performs subdomain enumeration, port scanning, directory discovery, WHOIS lookups, and more — all automated in one script.
 
-Requirements:
-    pip3 install requests beautifulsoup4 python-docx
-    # optional:
-    pip3 install python-nmap selenium sublist3r
-    # For selenium screenshots: install Chrome/Chromium and chromedriver matching your browser.
+🚀 Features
+
+🔍 Subdomain Enumeration
+
+crt.sh Passive Enumeration
+
+RapidDNS
+
+Brute-Force Subdomain Discovery
+
+DNS Resolution Validation
+
+⚡ Port Scanning
+
+Nmap + python-nmap Integration
+
+📂 Directory Bruteforce (Wordlist Based)
+
+🌍 WHOIS Lookups
+
+🖼️ Screenshot Capture (imgkit)
+
+📜 Clean Logging Output
+
+🎨 Hacker-Style ASCII Banner
+
+🧪 Python 3.13 Compatible
+
+🛠️ Installation
+1. Clone the Repository
+git clone https://github.com/YOUR-USERNAME/Automated-Bug-Hunter.git
+cd Automated-Bug-Hunter
+
+2. Install Python Dependencies
+pip install -r requirements.txt
+
+3. Install System Dependencies (IMPORTANT)
+Ubuntu/Kali Linux:
+sudo apt install nmap wkhtmltopdf
+
+▶️ Usage
+
+Run the tool like this:
+
+python3 bughunter.py -d example.com
+
+Options
+Flag	Description
+-d	Target domain
+-o	Save results to file
+-w	Custom wordlist
+--threads	Thread count
+--no-dns	Disable DNS brute force
+--simple	Minimal output
+
+Example:
+
+python3 bughunter.py -d google.com --threads 50 -o report.txt
+
+📦 Project Structure
+Automated-Bug-Hunter/
+│
+├── bughunter.py
+├── requirements.txt
+└── README.md
+
+📚 Requirements
+
+All Python dependencies are listed in:
+
+requirements.txt
+
+
+Example:
+
+requests==2.32.3
+aiohttp==3.10.5
+beautifulsoup4==4.12.3
+dnspython==2.7.0
+python-nmap==0.7.1
+pyfiglet==1.0.2
+colorama==0.4.6
+tldextract==5.1.1
+whois==0.9.27
+imgkit==1.2.4
+lxml==5.2.2
+
+⚠️ Disclaimer
+
+This tool is for educational and authorized penetration testing only.
+You are responsible for any misuse.
+
+⭐ Contributions
+
+Pull requests are welcome — feel free to contribute new features, engines, or bug fixes.
+
+📄 License
+
+This project is licensed under the MIT License.
