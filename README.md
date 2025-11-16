@@ -9,6 +9,8 @@ It combines multiple passive + active recon engines, port scanning,
 directory discovery, WHOIS lookups, screenshots, and more --- **all
 fully automated in one tool**.
 
+**Educational Purpose Only**
+
 GhostScan is written in Python 3.13 and optimized for Kali Linux.
 
 ## ⚡ **Features at a Glance**
